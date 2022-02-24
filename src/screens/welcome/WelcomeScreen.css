@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 812px;
+    width: 375px;
+    background-color: #241332;
+    position: relative;
+}
+
+.background_pic {
+    height: 76%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.brand_pic {
+    position: absolute;
+    margin-top: 10%;
+}
+
+.entry {
+   padding: 0.5em 0.5em 0 0.6em;
+   background-color: #864879;
+   color: white;
+   position: absolute;
+   top: 68%;
+   right: 0%;
+   border-radius: 10px 0 0 80px;
+   z-index: 1;
+   height: 170px;
+   width: 280px;
+}
+
+.entry_shadow {
+    position: absolute;
+    top: 69%;
+    right: 0%;
+    height: 10.65rem;
+    width: 18.8rem;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 10px 0 0 80px;
+ }
+
+.entry p {
+   padding: 0;
+   margin-bottom: 1em;
+   margin-top: 0;
+   font-size: 2.56rem !important;
+}
+
+.btn_enter {
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    background-color: #E9A6A6;
+    z-index: 1;
+    border-radius: 25px 0 0 25px;
+    top: 86%;
+    right: 0%;
+    padding: 1rem;
+    border: 0px;
+    width: fit-content;
+ }
+
+.arrow_icon1 {
+    margin: 0 0.5em 0 0;
+}
+ .btn_enter_shadow {
+    position: absolute;
+    top: 86.5%;
+    right: 0%;
+    height: 3.31rem;
+    width: 11rem;
+    color: white;
+    background-color: #241332;
+    border: 2px white solid;
+    border-radius: 25px 0 0 25px;
+   
+ }

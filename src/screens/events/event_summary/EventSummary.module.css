@@ -1,0 +1,78 @@
+.summary_image {
+    width: 30%;
+}
+.title {
+    background-color: #3F3351;
+    padding: 0.5rem;
+    width: 120%;
+    border-top: 2px solid #E9A6A6;
+    border-bottom: 2px solid #E9A6A6;
+    font-weight: bold;
+    font-size: 1.3125rem;
+}
+.data_stats_container {
+    display: flex;
+    direction: rtl;
+    margin-top: 1rem;
+}
+
+.stat_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:80px;
+   color: white;
+}
+
+.chart_container {
+    display: flex;
+  margin-top: 10%;
+  direction: rtl;
+ 
+}
+.chart_data_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80px;
+   color: white;
+   border: 2px solid #E9A6A6;
+    padding: 0.2rem 0.15rem 0.2rem 0.15rem;
+   
+}
+
+.chart_data_container:first-child {
+   border: 2px solid #E9A6A6;
+   border-radius: 0px 15px 15px 0px;
+}
+.chart_data_container:last-child {
+    border: 2px solid #E9A6A6;
+    
+     border-radius: 15px 0px 0px 15px;
+ }
+.data {
+    margin-top: 15%;
+}
+.chart_data1 {
+   font-size: 1.125rem;
+   font-weight: bold;
+} 
+.sum {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+.btn_group {
+    margin-top: auto;
+    width: 100%;
+}
+.btn_details{
+    direction: rtl;
+    margin-top: 5%;
+    border: 0px;
+}
+.btn_manage{
+    direction: rtl;
+    margin-top: 5%;
+    border: 0px;
+    background-color: #E9A6A6;
+}

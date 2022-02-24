@@ -1,0 +1,37 @@
+.reg_input {
+    color: white;
+    direction: rtl;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #817889;
+    font-size: 2.625em;
+    width: 90%;
+    box-shadow: none;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+.reg_input:first-child {
+    margin-top: 1em;
+}
+
+
+.card_icon {
+    position: absolute;
+    left: 1%;
+    top: 30%;
+
+}
+
+  .form_control {
+    cursor: pointer;
+   line-height: 0.9;
+   display: grid;
+   direction: rtl;
+   grid-template-columns: 1em auto;
+   gap: 1rem;
+   color: #707070;
+   margin-top: 2rem;
+   text-align: start;
+  width: 100%;
+ }

@@ -1,0 +1,24 @@
+.title {
+    margin: 0px 0px 1rem 0px;
+    border-bottom: 4px solid #864879;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.data {
+    margin: 0px 0px 0.5rem 0px;
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+    border-bottom: 2px solid #864879;
+}
+
+.data:last-child {
+   border-bottom: 0px;
+}
+
+.btn_give_present {
+    margin-top: auto;
+    width: 100%;
+}
+  
+

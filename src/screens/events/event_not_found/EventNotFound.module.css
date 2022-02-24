@@ -1,0 +1,19 @@
+.title {
+    margin: 2rem 0px 1rem 0px;
+}
+
+.data {
+    margin: 0px 0px 0.5rem 0px;
+    color:  #555869;
+}
+
+.data:last-child {
+   border-bottom: 0px;
+}
+
+.btn_give_present {
+    margin-top: auto;
+    width: 100%;
+}
+  
+

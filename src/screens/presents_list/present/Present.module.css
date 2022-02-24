@@ -1,0 +1,46 @@
+.item {
+    display: flex;
+    direction: rtl;
+    width: 100%;
+    margin-top: 15%;
+    text-align: start;
+}
+.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    background-color: white;
+    margin-left: 1rem;
+}
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.price {
+    margin: 0px;
+    font-size: medium;
+   margin-right: auto;
+   color: #E9A6A6;
+   font-size: 1rem;
+   font-weight: bold;
+}
+.title {
+    margin: 0px;
+    font-size: medium;
+   font-size: 1rem;
+   font-weight: bold;
+}
+.location {
+    margin: 0px;
+    font-size: medium;
+    color: #998FA2;
+}
+.date {
+    margin: 0px;
+    font-size: medium;
+    color: #998FA2;
+}

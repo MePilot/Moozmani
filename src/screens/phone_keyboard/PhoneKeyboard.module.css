@@ -1,0 +1,20 @@
+.phone_keyboard {
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem ;
+    grid-template-rows: 5rem 5rem 5rem ;
+    direction: rtl;
+}
+
+.digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9599B3;
+    font-size: 2.625em;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.digit:hover {
+    border: 1px solid white;
+}

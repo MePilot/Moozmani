@@ -1,0 +1,21 @@
+.btn_present {
+    width: 100%;
+    border: 0px;
+    background-color: #E9A6A6;
+    border-radius: 10px;
+}
+
+.btn_create {
+    margin-top: 4%;
+    border: 0px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.change_label {
+    width: 50%; 
+}
+
+.btn_group {
+    margin-top: auto;
+}

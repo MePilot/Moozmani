@@ -1,0 +1,28 @@
+.reg_input {
+    color: white;
+    direction: rtl;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #817889;
+    font-size: 2.625em;
+    width: 90%;
+    box-shadow: none;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+.reg_input_container {
+    position: relative;
+    
+}
+.btn_create_next{
+    width: 100%;
+    margin-top: auto;
+}
+  
+.card_icon {
+    position: absolute;
+    left: 5%;
+    top: 55%;
+
+}

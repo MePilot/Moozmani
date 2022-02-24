@@ -1,0 +1,50 @@
+.form_control {
+  font-family: system-ui, sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.0;
+  display: grid;
+  direction: rtl;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  color: #707070;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+.form_control:last-child {
+  margin-bottom: 0rem;
+}
+.container_price {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  direction: rtl;
+  align-items: center;
+}
+.service{
+ color: white;
+ font-size: 1.375rem;
+ font-weight: bold;
+}
+.price{
+  color: white;
+  font-size: 1.8125rem;
+  font-weight: bold;
+ }
+ .container_options {
+   margin-top: 10%;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 7rem;
+   border: 1px solid #9A9A9A;
+   border-radius: 15px;
+   justify-content: center;
+   align-items: center;
+ }
+ .btn_pay {
+   margin-top: 5%;
+   border: 0px;
+ }
+ .creditnum {
+   color: white;
+ }

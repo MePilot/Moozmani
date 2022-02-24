@@ -1,0 +1,23 @@
+.container_input {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.confirm_digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.625em;
+    padding: 1rem;
+    border: 2px solid #E9A6A6;
+    border-radius: 10px;
+    width: 1rem;
+    height: 1rem;
+}
+
+.btn_didnt_receive {
+    margin: 2em 0 2em 0;
+    width: 100%;
+}

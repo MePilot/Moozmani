@@ -1,0 +1,24 @@
+.reg_input {
+    color: white;
+    direction: rtl;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #817889;
+    font-size: 2.625em;
+    width: 90%;
+    box-shadow: none;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+
+.btn_continue_payment {
+    width: 100%;
+}
+  
+.card_icon {
+    position: absolute;
+    left: 1%;
+    top: 30%;
+
+}

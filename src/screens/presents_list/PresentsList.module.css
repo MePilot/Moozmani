@@ -1,0 +1,60 @@
+.btn_gift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    height: 17vh;
+    background-color: #E9A6A6;
+    border-radius: 40px 10px;
+}
+
+.btn_gift_shadow {
+    width: 43%;
+    height: 17vh;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px 10px;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    cursor: pointer;
+}
+
+.btn_create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 47%;
+   height: 17vh;
+   background-color: #864879;
+   border-radius: 10px 40px 10px 30px; 
+}
+.btn_create_shadow {
+    width: 43%;
+    height: 17vh;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px 40px 10px 30px; 
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    cursor: pointer;
+}
+.container_buttons {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.btn_text{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.presents_list {
+    width: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.presents_list::-webkit-scrollbar {
+    display: none;
+}
