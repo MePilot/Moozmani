@@ -1,7 +1,7 @@
 {
   "name": "moozmani",
   "version": "1.1.1",
-  "homepage": "https://mepilot.github.io/moozmani/",
+  "homepage": "https://mepilot.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
