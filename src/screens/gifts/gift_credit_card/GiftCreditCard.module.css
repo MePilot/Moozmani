@@ -24,12 +24,13 @@
 }
 
   .form_control {
+      font-size: 1.2rem;
     cursor: pointer;
-   line-height: 0.9;
+   line-height: 1.3;
    display: grid;
    direction: rtl;
-   grid-template-columns: 1em auto;
-   gap: 1rem;
+   grid-template-columns: 1rem auto;
+   gap: 1.5rem;
    color: #707070;
    margin-top: 2rem;
    text-align: start;

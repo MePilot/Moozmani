@@ -36,7 +36,7 @@ bodyContent={
 
 <button 
 className={style.btn_give_present}
-onClick={()=>navigate('/')}
+onClick={()=>navigate('/giftsum')}
 >להעניק מתנה לזוג</button>  
 
    
