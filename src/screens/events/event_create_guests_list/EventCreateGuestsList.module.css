@@ -92,16 +92,17 @@
   .payment_list::-webkit-scrollbar {
     display: none;
 }
+  
   .form_control {
-   
-    line-height: 0.9;
+    font-family: system-ui, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
     display: grid;
     direction: rtl;
-    grid-template-columns: 1em auto;
-    gap: 1rem;
+    grid-template-columns: 1rem auto;
+    gap: 2rem;
     color: #707070;
     margin-top: 1rem;
     text-align: start;
   }
-
   
