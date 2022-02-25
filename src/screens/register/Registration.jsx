@@ -105,9 +105,8 @@ bodyContent={
       </label>
 
 
-    
-
-      <Link to="/payment" style={{width:'100%'}}>
+    <div className={style.btn_group}>
+    <Link to="/payment" style={{width:'100%'}}>
         <button className={style.btn_continue_reg}>המשך</button>
       </Link>
      
@@ -125,6 +124,9 @@ bodyContent={
         <span>הרשמה עם גוגל</span>
         <img src={google} alt='google'></img>
       </button>
+    </div>
+
+      
    
      
   </>

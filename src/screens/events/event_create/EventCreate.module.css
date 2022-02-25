@@ -23,8 +23,8 @@
   
     font: inherit;
     color: currentColor;
-    width: 1.15em;
-    height: 1.15em;
+    width: 1.15rem;
+    height: 1.15rem;
     background-color: #E9A6A6;
     border-radius: 50%;
     transform: translateY(-0.075em);
@@ -35,8 +35,8 @@
   
   input[type="checkbox"]::before {
     content: "";
-    width: 0.65em;
-    height: 0.65em;
+    width: 0.65rem;
+    height: 0.65rem;
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
     transform: scale(0);
     transform-origin: bottom left;
