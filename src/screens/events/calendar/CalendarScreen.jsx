@@ -24,8 +24,8 @@ bodyContent={
   <>
  <Calendar 
  className='react-calendar' 
- calendarType="Hebrew" 
- locale='he-HE'
+ formatShortWeekday = {(locale, date) => ["'א","'ב","'ג","'ד","'ה","'ו","'ש"][date.getDay()]}
+ locale='he-IL'
  onChange={handleData} 
  value={value}
  
