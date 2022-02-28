@@ -33,6 +33,7 @@ import GuestInvitationLetterSent from './screens/guests/guest_invitation_letter_
 import EventSummary from './screens/events/event_summary/EventSummary';
 import GiftsReceived from './screens/gifts/gifts_received/GiftsReceived';
 import ContactUs from './screens/contact_us/ContactUs';
+import EventExpences from './screens/events/event_expences/EventExpences';
 
 
 function App() {
@@ -62,8 +63,8 @@ function App() {
         <Route path="/eventnotfound" element={<EventNotFound/>} />
         <Route path="/eventcreate" element={<EventCreate/>} />
         <Route path="/eventcreatepayment" element={<EventCreatePayment/>} />
-
-       
+        <Route path="/eventexpences" element={<EventExpences/>} />
+        
         <Route path="/eventcreatecategory" element={<EventCreateCategory/>} />
         <Route path="/eventcreateform" element={<EventCreateForm/>} />
         <Route path="/eventcreateaddimage" element={<EventCreateAddImage/>} />

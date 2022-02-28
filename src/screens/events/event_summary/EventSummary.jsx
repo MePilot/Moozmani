@@ -70,7 +70,7 @@ bodyContent={
         </button>
         <button 
       className={style.btn_manage}
-      onClick={()=>navigate('/manageexpenses')}
+      onClick={()=>navigate('/eventexpences')}
       >
         ניהול הוצאות
           
