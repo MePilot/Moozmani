@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+ 
 }
 
 button {
@@ -15,6 +16,7 @@ button {
   padding: 0.7rem;
   border: 1px solid white;
   width: 100%;
+ 
 }
 
 button:active {
@@ -28,14 +30,17 @@ button:active {
 
 p {
   color: white;
-  font-size: 1.375rem
+  font-size: 1.375rem;
+  
 }
 
 h1 {
   color: white;
   font-size: 1.625rem !important;
+ 
 }
 
 .arrow_icon {
  cursor: pointer;
 }
+

@@ -71,7 +71,7 @@ bodyContent={
   </li>
 </ul>
     
-     <Link to="/giftgreetings" style={{ width: '100%' }}>
+     <Link to="/giftgreetings" style={{ width: '100%' , marginTop:'auto'}}>
       <button 
       className={style.btn_send_confirm}>
          בחרתי
