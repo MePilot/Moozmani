@@ -28,11 +28,16 @@ bodyContent={
      <input className={style.telnumber}
      value={phoneNumber}
      onChange={event => setPhoneNumber(event.target.value)}
+     onKeyPress={(event) => {
+      if (!/[0-9]/.test(event.key)) {
+        event.preventDefault();
+      }
+    }}
      maxlength="10"
      type='tel'
      inputMode='decimal'
      autoComplete='tel'
-     pattern='[0-9]+'
+    
      ></input>
      
      <Link to="/phoneconfirm" style={{ width: '100%' }}>

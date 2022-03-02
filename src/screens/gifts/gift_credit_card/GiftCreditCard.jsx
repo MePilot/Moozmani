@@ -49,8 +49,11 @@ bodyContent={
         onChange={
         event => handleData(event)
         }
-        // type='text'
-        // autoComplete='given-name'
+        onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
      
      ></input>
      
@@ -66,8 +69,11 @@ bodyContent={
         onChange={
           event => handleData(event)
         }
-        // type='text'
-        // autoComplete='family-name'
+        onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
      ></input>
      
      <input 
@@ -78,9 +84,11 @@ bodyContent={
       onChange={
         event => handleData(event)
       }
-    //   type='email'
-    //   inputMode='email'
-    //   autoComplete='email'
+      onKeyPress={(event) => {
+        if (!/[0-9]/.test(event.key)) {
+          event.preventDefault();
+        }
+      }}
      ></input>
     
     <input 
@@ -91,9 +99,12 @@ bodyContent={
       onChange={
         event => handleData(event)
       }
-    //   type='email'
-    //   inputMode='email'
-    //   autoComplete='email'
+      onKeyPress={(event) => {
+        if (!/[0-9]/.test(event.key)) {
+          event.preventDefault();
+        }
+      }}
+      maxLength='9'
      ></input>
   </form>
 

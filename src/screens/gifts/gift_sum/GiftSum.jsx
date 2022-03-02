@@ -31,7 +31,11 @@ bodyContent={
      maxlength="10"
      type='numeric'
      inputMode='decimal'
-     pattern='[0-9]+'
+     onKeyPress={(event) => {
+      if (!/[0-9]/.test(event.key)) {
+        event.preventDefault();
+      }
+    }}
      ></input>
      
      <Link to="/giftpayments" style={{ width: '100%' }}>

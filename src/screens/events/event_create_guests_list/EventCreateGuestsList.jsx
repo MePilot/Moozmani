@@ -139,6 +139,11 @@ bodyContent={
         }
          type='tel'
          autoComplete='tel'
+         onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
      ></input>
       <button 
       className={style.btn_ok}>

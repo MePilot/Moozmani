@@ -85,8 +85,12 @@ bodyContent={
         event => handleData(event)
       }
        type='tel'
-    //   inputMode='email'
        autoComplete='tel'
+       onKeyPress={(event) => {
+        if (!/[0-9]/.test(event.key)) {
+          event.preventDefault();
+        }
+      }}
      ></input>
   </form>
 

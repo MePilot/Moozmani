@@ -13,7 +13,7 @@ function WelcomeScreen() {
       <img className={style.brand_pic} src={brandImage} alt='Brand'/>
       <img className={style.background_pic} src={backgroundImage} alt='Background'/>
       <div className={style.entry}>
-        <p>כל מה שצריך <br/> לאירוע מושלם</p>
+        <p>כל מה שצריך <strong>לאירוע מושלם</strong></p>
       
       </div>
       <div className={style.entry_shadow}>

@@ -64,6 +64,11 @@ bodyContent={
        type='tel'
     //   inputMode='email'
        autoComplete='tel'
+       onKeyPress={(event) => {
+        if (!/[0-9]/.test(event.key)) {
+          event.preventDefault();
+        }
+      }}
      ></input>
   <img className={style.card_icon} src={phoneSVG} alt='date'></img>
   </div>
