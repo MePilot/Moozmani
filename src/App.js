@@ -42,7 +42,7 @@ function App() {
       <BrowserRouter>
       <Routes>
        
-      <Route path="/" element={<EventExpences/>} />
+      <Route path="/" element={<WelcomeScreen/>} />
       
       <Route path="/loggedin" element={<PresentsList/>} />
         <Route path="/loggedin2" element={<MainMenu/>}/>
