@@ -133,3 +133,32 @@ font-size: 1.125rem;
     
       }
  
+.category {
+  cursor: pointer;
+
+}
+
+      .stats {
+        direction: rtl;
+        width: 100%;
+        text-align: start;
+        color: white;
+        margin-top: 15%;
+    }
+   
+    .line {
+     text-align: end;
+  }
+
+      .expences_list{
+    margin: 5% 0 5% 0;
+      
+        width: 100%;
+        overflow-y: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        padding: 0px;
+       }
+       .expences_list::-webkit-scrollbar {
+         display: none;
+     }

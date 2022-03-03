@@ -6,12 +6,28 @@ import Container1 from '../../../containers/container_1/Container1';
 
 function EventExpences() {
  
-  const [state, setState] = useState({})
+  const [state, setState] = useState({sum:0})
+  const [expences, setExpences] = useState([])
   const navigate = useNavigate()
+  
   const handleData= (event)=> {
     setState((prev)=>({...prev,[event.target.name]:event.target.value}))
   }
+  useEffect(() => {
+    
+    let total=0
+    expences.forEach(element => {
+      total+=parseInt(element.price)
+    });
 
+    setState(prev=>({...prev, sum:total}))
+  },[expences]);
+
+  const addData= (data)=> {
+    setExpences(prev=>[...prev, data])
+  }
+
+console.log(expences)
   return (
     
 <Container1
@@ -23,63 +39,59 @@ bodyContent={
   <>
     
 <div className={style.sum_container}>
-  <p className={style.sum_label}>:סכ הכל הוצאות<br/><span className={style.sum}>₪100,000</span> </p>
+  <p className={style.sum_label}>:סכ הכל הוצאות<br/><span className={style.sum}>₪{state.sum}</span> </p>
 </div>
 
 
 <input 
       className={style.reg_input}
-      name='location'
-      placeholder='אולם'
-      value={state.location}
-      onChange={
-        event => handleData(event.target.value)
-      }
+      name='category'
+      placeholder='שם הוצאה'
+      value={state.category || ''}
+      onChange={handleData}
+       
        type='text'
-    //   inputMode='email'
-    //   autoComplete='email'
+    
      ></input>
  <input 
       className={style.reg_input}
-      name='DG'
-      placeholder='די ג׳יי'
-      value={state.DG}
-      onChange={
-        event => handleData(event.target.value)
-      }
+      name='price'
+      placeholder='סכום'
+      value={state.price || ''}
+      onChange={handleData}
        type='text'
-    //   inputMode='email'
-    //   autoComplete='email'
      ></input>
-     <input 
-      className={style.reg_input}
-      name='light'
-      placeholder='הגברה ותאורה'
-      value={state.light}
-      onChange={
-        event => handleData(event.target.value)
+    
+    <div
+     className={style.expences_list}
+    >
+
+<table className={style.stats}>
+  <tbody>
+    <tr>
+      <td className={style.category}><strong>הוצאה</strong></td>
+      <td className={style.line}><strong>סכום</strong></td>
+    
+    </tr>
+    
+      {expences.map((item, key)=> {
+        return (
+          <tr key={key} className={style.category} 
+          onClick={()=>setExpences(expences.filter(e=>e.category!==item.category))}>
+            <td>{item.category}</td>
+            <td className={style.line}>₪{item.price}</td>
+          </tr>
+        )
+      })
       }
-       type='text'
-    //   inputMode='email'
-    //   autoComplete='email'
-     ></input>
-     <input 
-      className={style.reg_input}
-      name='cameraman'
-      placeholder='צלם'
-      value={state.cameraman}
-      onChange={
-        event => handleData(event.target.value)
-      }
-       type='text'
-    //   inputMode='email'
-    //   autoComplete='email'
-     ></input>
-  
-        
+     
+ </tbody>
+</table>
+
+    </div>
         <button 
       className={style.btn_ok}
-      // onClick={()=>navigate('/eventcreateguestlistfinal')}
+       onClick={()=>addData(state)}
       
       >
         הוספת הוצאה
