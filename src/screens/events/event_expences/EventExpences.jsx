@@ -60,6 +60,11 @@ bodyContent={
       value={state.price || ''}
       onChange={handleData}
        type='text'
+       onKeyPress={(event) => {
+        if (!/[0-9]/.test(event.key)) {
+          event.preventDefault();
+        }
+      }}
      ></input>
     
     <div
