@@ -20,13 +20,21 @@ headerContent={
 bodyContent={
   <>
     <p>אנו נעדכן אתכם<br/> בנוגע לאורחים שאישרו הגעה<br/> ואורחים שהעניקו מתנה<br/> באשראי</p>
-
-      <button 
+<div  className={style.btn_group}>
+<button 
+      className={style.btn_manage}
+      onClick={()=>navigate('/guestinvitationmessage')}
+      >
+        לראות מכתב 
+        </button>
+        <button 
       className={style.btn_manage}
       onClick={()=>navigate('/eventsummary')}
       >
         לניהול האירוע
         </button>
+</div>
+    
   </>
 }
 

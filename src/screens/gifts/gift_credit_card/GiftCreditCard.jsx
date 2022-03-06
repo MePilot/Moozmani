@@ -57,8 +57,8 @@ bodyContent={
      
      ></input>
      
-     {state.cardType==='visa' && <img className='card_icon' src={visaSVG} alt='visa'></img>}
-     {state.cardType==='mastercard' && <img className='card_icon' src={mastercardSVG} alt='mastercard'></img>}
+     {state.cardType==='visa' && <img className={style.card_icon} src={visaSVG} alt='visa'></img>}
+     {state.cardType==='mastercard' && <img className={style.card_icon} src={mastercardSVG} alt='mastercard'></img>}
 
     
      <input 
