@@ -28,6 +28,7 @@
    background-color: #864879;
    border-radius: 10px 40px 10px 30px; 
 }
+
 .btn_create_shadow {
     width: 43%;
     height: 17vh;
@@ -38,11 +39,13 @@
     right: 3%;
     cursor: pointer;
 }
+
 .container_buttons {
     display: flex;
     width: 90%;
     justify-content: space-between;
 }
+
 .btn_text{
     font-size: 1.5rem;
     color: white;
@@ -55,6 +58,8 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
 .presents_list::-webkit-scrollbar {
     display: none;
 }
+

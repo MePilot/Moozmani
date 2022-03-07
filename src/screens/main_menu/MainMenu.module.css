@@ -1,8 +1,9 @@
 .container {
-    height: 100vh;
+    height: 812px;
     background-color: #241332;
     position: relative;
     width: 375px;
+    z-index: 1;
 }
 
 .container_inner_main {
@@ -17,7 +18,9 @@
     position: absolute;
     top: 5.5%;
     left: 10%;
+    cursor: pointer;
 }
+
 .menu {
     margin-top: 15%;
     list-style-type: none;

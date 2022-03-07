@@ -4,12 +4,16 @@ import brandImage from './brand_icon2.svg'
 import closeSVG from './close.svg'
 import { useNavigate } from 'react-router-dom';
 
-function MainMenu() {
+function MainMenu({setToggle}) {
   const navigate = useNavigate();
     return (
 
     <div className={style.container}>
-      <img className={style.close_icon} src={closeSVG}></img>
+      <img className={style.close_icon} 
+      src={closeSVG}
+      onClick={()=>setToggle(false)}
+      
+      ></img>
 
       <div className={style.container_inner_main}>
         <img src={brandImage}></img>
@@ -20,7 +24,7 @@ function MainMenu() {
           >הענקת מתנה
           </li>
           <li  onClick={()=>navigate('/eventcreate')}>יצירת אירוע</li>
-          <li>ניהול האירוע שלי</li>
+          <li onClick={()=>navigate('/eventsummary')}>ניהול האירוע שלי</li>
           <li>הגדרות</li>
           <li  onClick={()=>navigate('/contactus')}>צור קשר</li>
         </ul>

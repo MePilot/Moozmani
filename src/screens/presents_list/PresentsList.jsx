@@ -46,28 +46,33 @@ function PresentsList() {
     
 <Container2 
 headerContent={
-  <div className={style.container_buttons}>
-    <div className={style.btn_gift}
-    
-    >
-      <span className={style.btn_text}>הענקת מתנה</span>
+  <>
+  
 
-    </div>
-    <div className={style.btn_gift_shadow}
-     onClick={()=>navigate('/eventsearch')}
-    >
-     
+<div className={style.container_buttons}>
+  <div className={style.btn_gift}
+  
+  >
+    <span className={style.btn_text}>הענקת מתנה</span>
 
-    </div>
-    <div className={style.btn_create}>
-      <span className={style.btn_text}>יצירת אירוע</span>
-    </div>
-    <div className={style.btn_create_shadow}
-     onClick={()=>navigate('/eventcreate')}
-    >
-    
-    </div>
   </div>
+  <div className={style.btn_gift_shadow}
+   onClick={()=>navigate('/eventsearch')}
+  >
+   
+
+  </div>
+  <div className={style.btn_create}>
+    <span className={style.btn_text}>יצירת אירוע</span>
+  </div>
+  <div className={style.btn_create_shadow}
+   onClick={()=>navigate('/eventcreate')}
+  >
+  
+  </div>
+</div>
+  </>
+  
 }
 bodyContent={
   <>
