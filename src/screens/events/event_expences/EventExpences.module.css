@@ -19,7 +19,7 @@
     box-shadow: none;
     font-size: 1em;
     padding: 0.5em;
-    margin-top: 2em;
+    margin-top: 1.5rem;
 }
 
 .reg_input_container {
@@ -150,7 +150,7 @@ font-size: 1.125rem;
         width: 100%;
         text-align: start;
         color: white;
-        margin-top: 15%;
+        margin-top: 5%;
     }
    
     .line {
