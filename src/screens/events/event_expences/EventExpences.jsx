@@ -70,7 +70,7 @@ bodyContent={
       placeholder='סכום'
       value={entry.price || ''}
       onChange={handleData}
-       type='text'
+       type='tel'
        onKeyPress={(event) => {
         if (!/[0-9]/.test(event.key)) {
           event.preventDefault();
