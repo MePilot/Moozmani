@@ -85,13 +85,13 @@ bodyContent={
 
     <div className={style.btn_group}>
     <button
-       onClick={() => setGuestsAmount((prev)=>prev>0 ? prev-1 : prev)}
+      
       >
        הענקת מתנה באשראי
       </button>
       <button
      className={style.btn_finish}
-       onClick={() => setGuestsAmount((prev)=>prev>0 ? prev-1 : prev)}
+     
       >
        סיום
       </button>
