@@ -33,7 +33,8 @@ function EventExpences() {
   }
 
   const changeData= (data)=> {
-    setExpences(prev=>[...prev, data])
+    setExpences(expences.map(e=> e.id!==data.id ? e :data ))
+    setEntry({category:'', price:0})
   }
 
 const removeData= (data)=> {
@@ -120,7 +121,7 @@ bodyContent={
         <button 
       className={style.btn_ok}
       
-      onClick={()=>setExpences(expences.map(e=> e.id!==entry.id ? e :entry ))}
+      onClick={()=>changeData(entry)}
       
       >
         עריכת הוצאה
