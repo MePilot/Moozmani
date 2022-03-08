@@ -6,13 +6,16 @@ import Container1 from '../../../containers/container_1/Container1';
 
 function EventExpences() {
  
-  const [state, setState] = useState({sum:0})
+  const [entry, setEntry] = useState({category:'', price:0})
   const [expences, setExpences] = useState([])
+  const [sum, setSum] = useState(0)
+  console.log(expences)
   const navigate = useNavigate()
   
   const handleData= (event)=> {
-    setState((prev)=>({...prev,[event.target.name]:event.target.value}))
+   setEntry((prev)=>({...prev, [event.target.name]:event.target.value}))
   }
+  
   useEffect(() => {
     
     let total=0
@@ -20,14 +23,16 @@ function EventExpences() {
       total+=parseInt(element.price)
     });
 
-    setState(prev=>({...prev, sum:total}))
+    setSum(total)
   },[expences]);
 
   const addData= (data)=> {
     setExpences(prev=>[...prev, data])
   }
+  const changeData= (data)=> {
+    setExpences(prev=>[...prev, data])
+  }
 
-console.log(expences)
   return (
     
 <Container1
@@ -39,25 +44,22 @@ bodyContent={
   <>
     
 <div className={style.sum_container}>
-  <p className={style.sum_label}>:סכ הכל הוצאות<br/><span className={style.sum}>₪{state.sum}</span> </p>
+  <p className={style.sum_label}>:סכ הכל הוצאות<br/><span className={style.sum}>₪{sum}</span> </p>
 </div>
-
 
 <input 
       className={style.reg_input}
       name='category'
       placeholder='שם הוצאה'
-      value={state.category || ''}
+      value={entry.category}
       onChange={handleData}
-       
-       type='text'
-    
+      type='text'
      ></input>
  <input 
       className={style.reg_input}
       name='price'
       placeholder='סכום'
-      value={state.price || ''}
+      value={entry.price || ''}
       onChange={handleData}
        type='text'
        onKeyPress={(event) => {
@@ -81,10 +83,14 @@ bodyContent={
     
       {expences.map((item, key)=> {
         return (
-          <tr key={key} className={style.category} 
-          onClick={()=>setExpences(expences.filter(e=>e.category!==item.category))}>
-            <td>{item.category}</td>
-            <td className={style.line}>₪{item.price}</td>
+          <tr 
+            key={key} 
+            className={entry.id===item.id ? style.category_selected : style.category} 
+            // onClick={()=>setExpences(expences.filter(e=>e.category!==item.category))}
+            onClick={()=>setEntry(item)}
+            >
+              <td>{item.category}</td>
+              <td className={style.line}>₪{parseInt(item.price)}</td>
           </tr>
         )
       })
@@ -94,14 +100,35 @@ bodyContent={
 </table>
 
     </div>
-        <button 
+    <div  className={style.btn_group}>
+    <button 
       className={style.btn_ok}
-       onClick={()=>addData(state)}
+       onClick={()=>addData({...entry, id:Math.random()}) }
       
       >
         הוספת הוצאה
           
         </button>
+        <button 
+      className={style.btn_ok}
+      
+      onClick={()=>setExpences(expences.map(e=> e.id!==entry.id ? e :entry ))}
+      
+      >
+        עריכת הוצאה
+          
+        </button>
+        <button 
+      className={style.btn_ok}
+      onClick={()=>setExpences(expences.filter(e=>e.id!==entry.id))}
+      
+      >
+        מחיקת הוצאה
+          
+        </button>
+
+    </div>
+      
   </>
 }
 
