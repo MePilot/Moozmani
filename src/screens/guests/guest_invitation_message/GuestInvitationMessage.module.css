@@ -162,5 +162,14 @@ padding: 0.1rem;
 }
 .btn_finish {
   background-color: transparent;
-  margin-top: 4%;
+  margin-top: 3%;
+  padding: 0.5rem;
+  font-size: 1.25rem !important;
+  border-radius: 10px;
+}
+.btn_pay {
+  margin-top: 3%;
+  padding: 0.5rem;
+  font-size: 1.25rem !important;
+  border-radius: 10px;
 }

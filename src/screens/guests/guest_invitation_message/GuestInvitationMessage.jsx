@@ -31,7 +31,7 @@ bodyContent={
   <img src={eventImageJPG} className={style.summary_image}></img>
   <p className={style.title}>החתונה של דניאל וירון</p>
     <p style={{width:'80%', margin:0}}>02/02/20 יום רביעי בשעה 20:00</p>
-    <p style={{margin:0}}>  <img className={style.waze_icon}  src={wazeSVG}></img> מקום אירוע: אולמי אגדתא </p>
+    <p style={{margin:0, fontSize:'1rem'}}>  <img className={style.waze_icon}  src={wazeSVG}></img> מקום אירוע: אולמי אגדתא </p>
    
  
     <div className={style.btn_container}>
@@ -52,7 +52,7 @@ bodyContent={
       </button>
     
     </div>
-    <p style={{marginBottom:0}}>?כמה תגיעו</p>
+    <p style={{marginBottom:0, marginTop:'3%'}}>?כמה תגיעו</p>
    
     <div className={style.btn_container_2}>
       <button className={style.btn_leftamount}
@@ -84,16 +84,20 @@ bodyContent={
     </div>
 
     <div className={style.btn_group}>
-    <button
-      
+    <button className={style.btn_pay}
       >
        הענקת מתנה באשראי
       </button>
       <button
      className={style.btn_finish}
-     
-      >
+     onClick={()=>navigate('/loggedin')}
+     >
        סיום
+      </button>
+      <button
+     className={style.btn_finish}
+     >
+       שתף
       </button>
       
     </div>

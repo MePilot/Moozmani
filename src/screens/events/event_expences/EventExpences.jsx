@@ -27,10 +27,18 @@ function EventExpences() {
   },[expences]);
 
   const addData= (data)=> {
+    if (!data.category) return
     setExpences(prev=>[...prev, data])
+    setEntry({category:'', price:0})
   }
+
   const changeData= (data)=> {
     setExpences(prev=>[...prev, data])
+  }
+
+const removeData= (data)=> {
+  setExpences(expences.filter(e=>e.id!==data.id))
+  setEntry({category:'', price:0})
   }
 
   return (
@@ -120,7 +128,7 @@ bodyContent={
         </button>
         <button 
       className={style.btn_ok}
-      onClick={()=>setExpences(expences.filter(e=>e.id!==entry.id))}
+      onClick={()=>removeData(entry)}
       
       >
         מחיקת הוצאה
