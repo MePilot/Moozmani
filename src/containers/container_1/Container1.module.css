@@ -1,9 +1,11 @@
 .container {
    
-    height: 812px;
+    min-height:100vh;
     background-color: #241332;
-    position: relative;
-    width: 375px;
+   
+    width: 100vmin;
+   
+   
 }
 
 .container_inner {
@@ -12,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     height: 77%;
+     position: relative;
 }
 
 .header {

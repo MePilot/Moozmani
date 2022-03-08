@@ -1,12 +1,12 @@
 
 import style from './GiftPayments.module.css'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import Container1 from '../../../containers/container_1/Container1';
 
 function GiftPayments() {
   const [numPayments, setNumPayments] = useState('')
- 
+  const navigate = useNavigate()
   return (
 <Container1
 headerContent={
@@ -71,12 +71,12 @@ bodyContent={
   </li>
 </ul>
     
-     <Link to="/giftgreetings" style={{ width: '100%' , marginTop:'auto'}}>
+    
       <button 
       className={style.btn_send_confirm}>
          בחרתי
         </button>
-     </Link>
+    
      
   </>
 }

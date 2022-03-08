@@ -4,9 +4,11 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem;
 }
-.btn_send_confirm4 {
-   width: 100%;
-   margin: 2em 0 2em 0;
+.btn_send_confirm {
+  position: absolute;
+   width: 90%;
+ bottom: 5%;
+  
 }
 .btn_payment {
     width: 4.8125rem;
