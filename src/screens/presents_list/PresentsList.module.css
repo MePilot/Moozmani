@@ -63,3 +63,17 @@
     display: none;
 }
 
+.btn_pay {
+    border: 0;
+    font-size: 1rem !important;
+    padding: 0.5rem;
+    margin-top: 2%;
+    background-color: #E9A6A6;
+}
+.line_dashed {
+    margin:1rem 0;
+    height:1px;
+    width: 100%;
+    background: repeating-linear-gradient(to right,#E9A6A6 0,#E9A6A6 7px,transparent 7px,transparent 12px);
+    
+  }

@@ -14,7 +14,8 @@ const presents = [
    date:'יום חמישי, 21.09.22',
    location:'אולמי אבניו',
    icon:brand1,
-   price:'₪500'
+   price:'אישרת הגעה',
+   approved: true
 },
 { 
   title:'בת המצווש של יהלי',
@@ -83,13 +84,23 @@ bodyContent={
   {
     
     presents.map(present=>{ return (
-<Present
+      <>
+      <Present
       image={present.icon}
       title={present.title}
       date={present.date}
       location={present.location}
       price={present.price}
       />
+      {
+       present?.approved && <button className={style.btn_pay}>
+      הענקת מתנה באשראי
+          </button>
+    }
+   <div className={style.line_dashed}></div>
+      </>
+
+      
     )
       
     })

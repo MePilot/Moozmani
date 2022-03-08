@@ -1,6 +1,6 @@
 import style from './Present.module.css'
 
-function Present({image, title, date, location, price}) {
+function Present({image, title, date, location, price, approved}) {
   
   return (
    <div className={style.item}>
@@ -13,6 +13,7 @@ function Present({image, title, date, location, price}) {
       <p className={style.location}>{location}</p>
      </div>
     <span className={style.price}>{price}</span>
+    
     
    </div>
     
