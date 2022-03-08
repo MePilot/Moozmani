@@ -13,6 +13,8 @@ import eventImageJPG from './event_image.jpg'
 
 function GuestInvitationMessage() {
   const [greetText, setGreetText] = useState('')
+  const [guestsAmount, setGuestsAmount] = useState(1)
+  const [arrive, setArrive] = useState('')
   const navigate = useNavigate()
 
   const handleChange = (event) => {
@@ -22,41 +24,78 @@ function GuestInvitationMessage() {
   return (
 <Container1
 headerContent={
-  <h1>מכתב הזמנה</h1>
+  <h1>אישור הגעה</h1>
 }
 bodyContent={
   <>
   <img src={eventImageJPG} className={style.summary_image}></img>
-    <p style={{width:'80%'}}>!שלום שם המוזמן<br/> בן זוג 1 ובת זוג 2 מזמינים אותכם לחגוג את יום שמחתם ביום <strong>חמישי 5.02.22 בשעה 17:00</strong></p>
-    <p><img className={style.waze_icon}  src={wazeSVG}></img>   מקום אירוע: <strong>אולם סופיה</strong></p>
-    <p style={{marginTop:'0'}}> הוסיף ליומן <img className={style.date_icon}  src={dateSVG}></img></p>
-    <p>אנה אשרו הגעתכם</p>
+  <p className={style.title}>החתונה של דניאל וירון</p>
+    <p style={{width:'80%', margin:0}}>02/02/20 יום רביעי בשעה 20:00</p>
+    <p style={{margin:0}}>  <img className={style.waze_icon}  src={wazeSVG}></img> מקום אירוע: אולמי אגדתא </p>
+   
+ 
     <div className={style.btn_container}>
-    <div className={style.btn_container_inner}>
-    <div className={style.btn}
-      // onClick={()=>navigate('/guestinvitationlettersent')}
+      <button className={arrive==='yes' ? style.btn_leftP : style.btn_left}
+       onClick={() => setArrive('yes')}
       >
-       <img className={style.btn_icon} src={checkCircleSVG}></img>
-    </div>
-      <span className={style.btn_label}>מגיע/ה</span>
-      </div>
+        אגיע
+      </button>
+      <button className={arrive==='no' ? style.btn_middleP : style.btn_middle}
+       onClick={() => setArrive('no')}
+      >
+        לא אגיע
+      </button>
+      <button className={arrive==='maybe' ? style.btn_rightP : style.btn_right}
+       onClick={() => setArrive('maybe')}
+      >
+        מתלבט
+      </button>
     
-      <div className={style.btn_container_inner}>
-    <div className={style.btn}
-      // onClick={()=>navigate('/guestinvitationlettersent')}
-      >
-        <img className={style.btn_icon} src={questionSVG}></img>
     </div>
-      <span className={style.btn_label}>אולי מגיע/ה</span>
-      </div>
-      <div className={style.btn_container_inner}>
-    <div className={style.btn}
-      // onClick={()=>navigate('/guestinvitationlettersent')}
+    <p style={{marginBottom:0}}>?כמה תגיעו</p>
+   
+    <div className={style.btn_container_2}>
+      <button className={style.btn_leftamount}
+      onClick={() => setGuestsAmount((prev)=>prev+1)}
       >
-        <img className={style.btn_icon} src={xSVG}></img>
+        +
+      </button>
+      <input className={style.telnumber}
+    
+      value={guestsAmount}
+      onChange={event => setGuestsAmount(event.target.value)}
+     onKeyPress={(event) => {
+      if (!/[0-9]/.test(event.key)) {
+        event.preventDefault();
+      }
+    }}
+   
+     type='tel'
+     inputMode='decimal'
+     autoComplete='tel'
+    
+     ></input>
+      <button className={style.btn_rightamount}
+       onClick={() => setGuestsAmount((prev)=>prev>0 ? prev-1 : prev)}
+      >
+       -
+      </button>
+    
     </div>
-      <span className={style.btn_label}>לא מגיע/ה</span>
-      </div>
+
+    <div className={style.btn_group}>
+    <button
+       onClick={() => setGuestsAmount((prev)=>prev>0 ? prev-1 : prev)}
+      >
+       הענקת מתנה באשראי
+      </button>
+      <button
+     className={style.btn_finish}
+       onClick={() => setGuestsAmount((prev)=>prev>0 ? prev-1 : prev)}
+      >
+       סיום
+      </button>
+      
     </div>
    
   </>
