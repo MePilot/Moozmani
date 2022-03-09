@@ -83,7 +83,7 @@ bodyContent={
     
     </div>
 
-    <div className={style.btn_group}>
+    <div className='btn_group'>
     <button className={style.btn_pay}
       >
        הענקת מתנה באשראי

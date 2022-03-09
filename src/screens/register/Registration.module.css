@@ -55,21 +55,20 @@
   cursor: pointer;
 }
 
-.btn_group {
-  margin-top: auto;
- 
-}
-  .btn_continue_reg {
-      width: 100%;
+
+@media screen and (min-width: 1024px) {
+  .divider {
+   
   }
+}
   
   .divider {
     margin-top: 2%;
     border-bottom: 2px solid #e9a6a6; 
-    text-align: 'center';
+  
     height: 1rem;
-    width: 100%;
-    text-align: center;
+    
+   
   }
 
   .divider_text {
@@ -83,7 +82,7 @@
       margin-top: 6%;
       background-color: #3A5998;
       direction: rtl;
-      width: 100%;
+     
   }
   .btn_facebook_register:active {
    
@@ -98,7 +97,7 @@
     background-color: white;
     direction: rtl;
    color: black;
-   width: 100%;
+  
 }
 .btn_google_register img{
  margin-right: 2rem;

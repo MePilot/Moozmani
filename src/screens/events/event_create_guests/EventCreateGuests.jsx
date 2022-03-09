@@ -47,7 +47,7 @@ bodyContent={
         </button>
      </Link>
 
-     <div className={style.btn_group}>
+     <div className='btn_group'>
      <button 
       className={style.btn_continue}>
         צירוף מוזמנים באקסל

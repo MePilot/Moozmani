@@ -2,12 +2,12 @@
 import style from './PhoneNumber.module.css'
 import PhoneKeyboard from '../phone_keyboard/PhoneKeyboard';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Container1 from '../../containers/container_1/Container1';
 
 function PhoneNumber() {
   const [phoneNumber, setPhoneNumber] = useState('')
-  
+  const navigate = useNavigate()
   const handleAddDigits= (digit)=> {
     if (phoneNumber.length>=10) return
     setPhoneNumber((prev)=>prev+digit)
@@ -40,12 +40,15 @@ bodyContent={
     
      ></input>
      
-     <Link to="/phoneconfirm" style={{ width: '100%' }}>
+    
       <button 
-      className={style.btn_send_confirm}>
+   
+      onClick={()=>navigate('/phoneconfirm')}
+      
+      >
         שלחו לי קוד אימות
         </button>
-     </Link>
+     
      
      <PhoneKeyboard 
       addDigit={handleAddDigits}

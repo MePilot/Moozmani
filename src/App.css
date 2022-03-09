@@ -1,10 +1,8 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
- 
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
 }
 
 button {
@@ -16,8 +14,18 @@ button {
   padding: 0.7rem;
   border: 1px solid white;
   width: 100%;
-  
- 
+  margin-top: 5%;
+}
+
+.btn_group {
+ margin-top: auto;
+ width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn_group {
+    margin-top: 20%;
+  }
 }
 
 button:active {

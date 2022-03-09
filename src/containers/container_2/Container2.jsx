@@ -43,9 +43,9 @@ function Container2({headerContent, bodyContent}) {
         {headerContent && headerContent}
       </header>
 
-      <div className={style.container_inner}>
+      
         {bodyContent && bodyContent}
-      </div>
+      
       
     </div>
   );

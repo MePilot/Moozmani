@@ -71,9 +71,11 @@ bodyContent={
   </li>
 </ul>
     
-    
+     
       <button 
-      className={style.btn_send_confirm}>
+      className={style.btn_send_confirm}
+      onClick={()=>navigate('/giftgreetings')}
+      >
          בחרתי
         </button>
     

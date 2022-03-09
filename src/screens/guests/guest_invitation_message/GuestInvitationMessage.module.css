@@ -72,12 +72,13 @@
 
 }
 .summary_image {
+  margin-top: 5%;
   width: 30%;
 }
 .title {
   background-color: #3F3351;
-  padding: 0.5rem;
-  width: 105%;
+  padding: 0.5rem 0 0.5rem 0;
+  width: calc(100% + 30px);
   border-top: 2px solid #E9A6A6;
   border-bottom: 2px solid #E9A6A6;
   font-weight: bold;

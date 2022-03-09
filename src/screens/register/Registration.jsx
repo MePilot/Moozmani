@@ -6,12 +6,12 @@ import femaleSVGPressed from './female_pressed.svg'
 import femaleSVGUnpressed from './female_unpressed.svg'
 import facebook from './facebook.svg'
 import google from './google.svg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Container1 from '../../containers/container_1/Container1';
 
 function Registration() {
   const [state, setState] = useState({condition:false})
-  
+  const navigate = useNavigate()
   const handleData= (event)=> {
     setState((prev)=>({...prev,[event.target.name]:event.target.value}))
   }
@@ -105,10 +105,13 @@ bodyContent={
       </label>
 
 
-    <div className={style.btn_group}>
-    <Link to="/payment" style={{width:'100%'}}>
-        <button className={style.btn_continue_reg}>המשך</button>
-      </Link>
+    <div className='btn_group'>
+  
+        <button 
+       
+        onClick={()=>navigate('/payment')}
+        >המשך</button>
+     
      
       <div className={style.divider}>
         <span className={style.divider_text}>
