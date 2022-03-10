@@ -1,11 +1,11 @@
 .container {
    display: flex;
    flex-direction: column;
-    min-height: calc(100vh - 15px);
+    min-height: calc(100vh - 25px);
     width: calc(100vw - 30px);
     background-color: #241332;
     align-items: center;
-    padding: 0px 15px 15px 15px;
+    padding: 0px 15px 25px 15px;
     
 }
 
@@ -15,20 +15,11 @@
     }
   }
 
-.container_inner {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-   
-}
-
 .header {
     background-color: #864879;
     border-radius: 0 0 80px 0px;
     width: calc(100% + 30px);
-   margin-bottom: 5%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;

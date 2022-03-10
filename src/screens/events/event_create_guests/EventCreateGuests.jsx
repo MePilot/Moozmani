@@ -36,16 +36,16 @@ bodyContent={
        >
          <span className={style.category_name}>עבודה</span>
        </div>
-      
-     </div>
-    
-     <Link to="/" style={{ width: '87%' }}>
-      <button 
+       <div 
       className={style.btn_other}>
         אחר
           
-        </button>
-     </Link>
+        </div>
+     </div>
+    
+    
+     
+   
 
      <div className='btn_group'>
      <button 

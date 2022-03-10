@@ -33,7 +33,7 @@ bodyContent={
 
     
       <button 
-      className={style.btn_confirm}
+     
       onClick={()=>navigate('/giftcreditcard')}
       >
         אישור

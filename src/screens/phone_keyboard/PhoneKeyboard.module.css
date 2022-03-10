@@ -1,8 +1,16 @@
 .phone_keyboard {
     display: grid;
-    grid-template-columns: 6rem 6rem 6rem ;
-    grid-template-rows: 5rem 5rem 5rem ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     direction: rtl;
+    margin: auto;
+    width: 90%;
+}
+
+@media screen and (max-height: 630px) {
+    .phone_keyboard {
+        display: none;
+    }
 }
 
 .digit {

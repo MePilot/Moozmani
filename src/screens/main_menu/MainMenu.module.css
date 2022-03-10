@@ -1,9 +1,11 @@
 .container {
-    height: 812px;
+    min-height: calc(100vh);
     background-color: #241332;
     position: relative;
-    width: 375px;
+    width: calc(100vw);
     z-index: 1;
+    
+   
 }
 
 .container_inner_main {

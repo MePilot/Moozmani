@@ -14,7 +14,7 @@
     font-size: 1rem !important;
     border: 0px;
     border-radius: 0px 10px 10px 0px;
-    margin-top: 0;
+    margin:0;
 }
 
 .switch_button_right_selected{
@@ -24,7 +24,7 @@
     font-size: 1rem !important;
     border: 0px;
     border-radius: 0px 10px 10px 0px;
-    margin-top: 0;
+    margin:0;
 }
 
 .switch_button_left {
@@ -34,7 +34,7 @@
     font-size: 1rem !important;
     border: 0px;
     border-radius: 10px 0px 0px 10px;
-    margin-top: 0;
+    margin:0;
 }
 .switch_button_left_selected{
     flex-grow: 1;
@@ -43,11 +43,11 @@
     font-size: 1rem !important;
     border: 0px;
     border-radius: 10px 0px 0px 10px;
-    margin-top: 0;
+    margin:0;
 }
 .btn_ok {
     margin-top: auto;
-    border: 0px;
+   
 }
 
 .reg_input {
@@ -92,6 +92,7 @@
    -ms-overflow-style: none;  /* IE and Edge */
    scrollbar-width: none;  /* Firefox */
    padding: 0px;
+   margin-bottom: 10%;
   }
   .payment_list::-webkit-scrollbar {
     display: none;

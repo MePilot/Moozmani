@@ -46,6 +46,7 @@ function PresentsList() {
   return (
     
 <Container2 
+noBack
 headerContent={
   <>
   

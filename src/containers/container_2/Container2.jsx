@@ -7,7 +7,7 @@ import iconSVG from './icon.svg'
 import { useState , useEffect} from 'react';
 import MainMenu from '../../screens/main_menu/MainMenu';
 
-function Container2({headerContent, bodyContent}) {
+function Container2({headerContent, bodyContent, noBack}) {
   const navigate = useNavigate()
   const [toggle, setToggle] = useState(false)
   const [toggleNotifications, setToggleNotifications] = useState(false)
@@ -37,9 +37,9 @@ function Container2({headerContent, bodyContent}) {
         </div>
       </div>
       <header className={style.header}>
-        <img className={style.arrow_icon} src={arrowSVG} alt='arrow'
-       onClick={()=>navigate(-1)}
-        />
+        {!noBack && <img className={style.arrow_icon} src={arrowSVG} alt='arrow'
+       onClick={()=>navigate(-1)} 
+        />}
         {headerContent && headerContent}
       </header>
 

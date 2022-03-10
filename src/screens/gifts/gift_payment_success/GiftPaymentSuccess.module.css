@@ -43,13 +43,9 @@ margin-top: 0.5rem;
   width: 100%;
 }
 .btn_share {
-  border: 0px;
+ 
   background-color: #E9A6A6;
-  border-radius: 10px;
+  
+  
 }
 
-.btn_quit {
-  margin-top: 4%;
-  border: 0px;
-  border-radius: 10px;
-}

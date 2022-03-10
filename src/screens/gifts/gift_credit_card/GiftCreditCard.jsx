@@ -126,7 +126,6 @@ bodyContent={
 </div>
 
   <button
-  className={style.btn_continue_payment}
   onClick={()=>navigate('/giftpaymentsuccess')}
   >תשלום</button>  
 

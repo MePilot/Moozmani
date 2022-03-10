@@ -30,7 +30,7 @@ bodyContent={
 
     
       <button 
-      className={style.btn_confirm}
+    
       onClick={()=>navigate('/eventcreateguests')}
       >
         אישור
