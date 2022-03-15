@@ -85,6 +85,7 @@ bodyContent={
 
     <div className='btn_group'>
     <button className={style.btn_pay}
+    onClick={()=>navigate('/giftsum')}
       >
        הענקת מתנה באשראי
       </button>
