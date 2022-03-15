@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+
+}
+.icon {
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.notifications_container {
+    position: absolute;
+   width: 0;
+   top: 8%;
+    overflow-x: hidden;
+    -webkit-transition: all 0.3s ease;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: white;
+    direction: rtl;
+    display: flex;
+flex-direction: column;
+}
+.notifications_container_opened {
+    position: absolute;
+   width: 10rem;
+    top: 8%;
+    overflow-x: hidden;
+    -webkit-transition: all 0.3s ease;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: white;
+    
+    direction: rtl;
+    display: flex;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+.container_inner {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    cursor: pointer;
+   
+}
+.container_inner:hover {
+    background-color: rgb(99, 96, 96);
+   
+}
+
+.notification_text {
+    font-size: 0.5rem;
+margin: 0;
+}
+.data {
+    margin-right: 0.5rem;
+}
+.date {
+     font-size: 0.6rem;
+    margin: 0;
+}
+.content {
+    font-size: 0.7rem;
+    margin: 0;
+}

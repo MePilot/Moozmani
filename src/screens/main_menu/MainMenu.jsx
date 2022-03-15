@@ -27,6 +27,7 @@ function MainMenu({setToggle}) {
           <li onClick={()=>navigate('/eventsummary')}>ניהול האירוע שלי</li>
           <li>הגדרות</li>
           <li  onClick={()=>navigate('/contactus')}>צור קשר</li>
+          <li  onClick={()=>navigate('/about')}>קצת עלינו</li>
         </ul>
         <button className={style.btn_logout}>התנתקות</button>
       </div>

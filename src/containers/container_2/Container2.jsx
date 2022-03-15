@@ -4,13 +4,35 @@ import { useNavigate } from "react-router-dom";
 import bellSVG from './bell.svg'
 import menuSVG from './menu.svg'
 import iconSVG from './icon.svg'
-import { useState , useEffect} from 'react';
+import { useState , useEffect, useRef} from 'react';
 import MainMenu from '../../screens/main_menu/MainMenu';
+import Notification from '../../notification/Notification';
+const nots = [
+  {
+    arrive:true,
+    date:'לפני 3 שעות',
+    content:'ברק אלבז מגיע'
 
+},
+{
+  arrive:false,
+  date:'לפני 3 שעות',
+  content:'ברק אלבז מגיע'
+
+},
+{
+  date:'לפני 3 שעות',
+  content:'סתם הודעה'
+
+}
+]
 function Container2({headerContent, bodyContent, noBack}) {
   const navigate = useNavigate()
   const [toggle, setToggle] = useState(false)
   const [toggleNotifications, setToggleNotifications] = useState(false)
+  const ref = useRef()
+  useOnClickOutside(ref, () => setToggleNotifications(false))
+
   return (
 
     <div className={style.container}>
@@ -18,23 +40,29 @@ function Container2({headerContent, bodyContent, noBack}) {
         <MainMenu setToggle={setToggle}/>
         </div>
       <div className={style.navbar}>
-        <div className={style.bell}> 
+        <div className={style.bell}
+          onClick={()=>setToggleNotifications(toggleNotifications=> !toggleNotifications)}> 
         <img  src={bellSVG}
-         onClick={()=>setToggleNotifications(toggleNotifications=> !toggleNotifications)}
+        
         ></img>
-        <div className={style.circle}>1</div>
+        <div
+        className={style.circle}
+        onClick={()=>setToggleNotifications(toggleNotifications=> !toggleNotifications)}
+        >3</div>
         </div>
        
-        <img src={iconSVG}></img>
+        <img style={{cursor:'pointer'}} src={iconSVG}
+         onClick={()=>navigate('/loggedin')}
+        
+        ></img>
         <img className={style.menu_icon} src={menuSVG}
         onClick={()=>setToggle(toggle=> !toggle)}
         ></img>
 
-<div className={!toggleNotifications ? style.notifications_container : style.notifications_container_opened}>
-          <a href='/guestinvitationmessage'>הזמנה</a>
-
-
-        </div>
+<Notification 
+    data={nots}
+    toggle={toggleNotifications} 
+    setToggleNotifications={setToggleNotifications}/>
       </div>
       <header className={style.header}>
         {!noBack && <img className={style.arrow_icon} src={arrowSVG} alt='arrow'
@@ -50,5 +78,30 @@ function Container2({headerContent, bodyContent, noBack}) {
     </div>
   );
 }
-
+function useOnClickOutside(ref, handler) {
+  useEffect(
+    () => {
+      const listener = (event) => {
+        // Do nothing if clicking ref's element or descendent elements
+        if (!ref.current || ref.current.contains(event.target)) {
+          return;
+        }
+        handler(event);
+      };
+      document.addEventListener("mousedown", listener);
+      document.addEventListener("touchstart", listener);
+      return () => {
+        document.removeEventListener("mousedown", listener);
+        document.removeEventListener("touchstart", listener);
+      };
+    },
+    // Add ref and handler to effect dependencies
+    // It's worth noting that because passed in handler is a new ...
+    // ... function on every render that will cause this effect ...
+    // ... callback/cleanup to run every render. It's not a big deal ...
+    // ... but to optimize you can wrap handler in useCallback before ...
+    // ... passing it into this hook.
+    [ref, handler]
+  );
+}
 export default Container2;

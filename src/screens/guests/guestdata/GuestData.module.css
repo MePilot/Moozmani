@@ -1,0 +1,93 @@
+.reg_input {
+    color: white;
+    direction: rtl;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #817889;
+    font-size: 2.625em;
+    width: 90%;
+    box-shadow: none;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+.reg_input_container {
+    position: relative;
+    
+}
+.btn_create_next{
+    width: 100%;
+    margin-top: auto;
+}
+  
+.card_icon {
+    position: absolute;
+    left: 5%;
+    top: 55%;
+
+}
+.lbl {
+    color: white;
+  
+    margin-top: 5%;
+    font-size: 1rem;
+}
+.btn_container {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    direction: rtl;
+  }
+.btn_right {
+    background-color: transparent;
+    border: 2px solid #E9A6A6;
+    border-radius: 15px 0px 0px 15px;
+    margin-right: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .btn_middle {
+    background-color: transparent;
+    border: 2px solid #E9A6A6;
+    border-radius: 0px;
+    margin: 0 1% 0 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .btn_left{
+    background-color: transparent;
+    border: 2px solid #E9A6A6;
+    border-radius: 0px 15px 15px 0px;
+    margin-left: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .btn_rightP {
+    background-color: #E9A6A6;
+    border: 2px solid #E9A6A6;
+    border-radius: 15px 0px 0px 15px;
+    margin-right: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .btn_middleP {
+    background-color: #E9A6A6;
+    border: 2px solid #E9A6A6;
+    border-radius: 0px;
+    margin: 0 1% 0 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .btn_leftP{
+    background-color: #E9A6A6;
+    border: 2px solid #E9A6A6;
+    border-radius: 0px 15px 15px 0px;
+    margin-left: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }

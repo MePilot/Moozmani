@@ -62,6 +62,12 @@ bodyContent={
 <p style={{width:'100%'}}>התקבל באשראי:<span className={style.sum}>₪24,000</span></p>
 
 <div className={style.btn_group}>
+<button 
+      className={style.btn_details}
+      onClick={()=>navigate('/guestlist')}
+      >
+        פירוט המוזמנים
+        </button>
      <button 
       className={style.btn_details}
       onClick={()=>navigate('/giftsreceived')}

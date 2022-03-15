@@ -94,7 +94,11 @@ bodyContent={
       price={present.price}
       />
       {
-       present?.approved && <button className={style.btn_pay}>
+       present?.approved && 
+       <button 
+       className={style.btn_pay}
+       onClick={()=>navigate('/giftsum')}
+       >
       הענקת מתנה באשראי
           </button>
     }

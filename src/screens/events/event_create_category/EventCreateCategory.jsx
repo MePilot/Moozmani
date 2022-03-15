@@ -69,16 +69,15 @@ bodyContent={
          <img src={girlSVG}></img>
          <span className={style.category_name}>בת מצווה</span>
        </div>
+       <div 
+        className={style.btn_other}
+        onClick={()=>navigate('/eventcreateform')}
+        >
+          אחר
+            
+        </div>
      </div>
     
-     <Link to="/eventcreateform" style={{ width: '100%' }}>
-      <button 
-      className={style.btn_other}>
-        אחר
-          
-        </button>
-     </Link>
-     
   </>
 }
 

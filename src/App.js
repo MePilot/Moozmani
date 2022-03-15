@@ -35,6 +35,9 @@ import GiftsReceived from './screens/gifts/gifts_received/GiftsReceived';
 import ContactUs from './screens/contact_us/ContactUs';
 import EventExpences from './screens/events/event_expences/EventExpences';
 import GuestInvitationMessage from './screens/guests/guest_invitation_message/GuestInvitationMessage';
+import GuestList from './screens/guests/guest_list/GuestList';
+import GuestData from './screens/guests/guestdata/GuestData';
+import About from './screens/about/About';
 
 
 function App() {
@@ -78,7 +81,9 @@ function App() {
         <Route path="/eventsummary" element={<EventSummary/>} />
         <Route path="/giftsreceived" element={<GiftsReceived/>} />
         <Route path="/contactus" element={<ContactUs/>} />
-      
+        <Route path="/about" element={<About/>} />
+        <Route path="/guestlist" element={<GuestList/>} />
+        <Route path="/guestdata" element={<GuestData/>} />
       </Routes>
       
       </BrowserRouter>
