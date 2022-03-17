@@ -45,6 +45,13 @@
 .bell {
     position: relative;
     cursor: pointer;
+   
+}
+.bell:after {
+    content:'';
+    position:absolute;
+    top:-10px; bottom:-10px; 
+    left:-10px; right:-10px; 
 }
 .circle {
     position: absolute;
@@ -68,7 +75,8 @@
     width: 0;
     overflow-x: hidden;
     -webkit-transition: all 0.3s ease;
-    transition: 0.7s;
+    transition: 0.5s;
+    height: 100%;
 }
 .menu_icon {
     cursor: pointer;
@@ -79,7 +87,8 @@
     width: 100%;
     overflow-x: hidden;
     -webkit-transition: all 0.3s ease;
-    transition: 0.7s;
+    transition: 0.5s;
+    height: 100%;
 }
 .notifications_container {
     position: absolute;

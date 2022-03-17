@@ -38,6 +38,9 @@ import GuestInvitationMessage from './screens/guests/guest_invitation_message/Gu
 import GuestList from './screens/guests/guest_list/GuestList';
 import GuestData from './screens/guests/guestdata/GuestData';
 import About from './screens/about/About';
+import GuestResponceReceived from './screens/guests/guest_response_received/GuestResponceReceived';
+import EventCreateGuestsListEditable from './screens/events/event_create_guest_list_editable/EventCreateGuestListEditable';
+import EventCreateGuestsListModify from './screens/events/event_create_guest_list_modify/EventCreateGuestsListModify';
 
 
 function App() {
@@ -84,6 +87,9 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/guestlist" element={<GuestList/>} />
         <Route path="/guestdata" element={<GuestData/>} />
+        <Route path="/guestresponcereceived" element={<GuestResponceReceived/>} />
+        <Route path="/eventcreateguestlisteditable" element={<EventCreateGuestsListEditable/>} />
+        <Route path="/eventcreateguestlistmodify" element={<EventCreateGuestsListModify/>} />
       </Routes>
       
       </BrowserRouter>

@@ -25,7 +25,7 @@ function EventCreateGuestsList() {
   const [data, setData] = useState({})
   const location = useLocation()
   const [search, setSearch] = useState('')
-  const [contacts, setContacts] = useState(contactList)
+  const [contacts, setContacts] = useState([])
   const navigate = useNavigate()
 
   const handleData= (event)=> {
@@ -75,7 +75,7 @@ bodyContent={
   </div>
   <ul className={style.payment_list}>
         {
-          contacts.map((contact)=> {
+          contactList.map((contact)=> {
             return (
               <li className={style.payment_list_item}>
                
@@ -98,7 +98,7 @@ bodyContent={
         
         <button 
       className={style.btn_ok}
-      onClick={()=>navigate('/eventcreateguestlistfinal')}
+      onClick={()=>navigate('/eventcreateguestlisteditable')}
       
       >
         אישור
@@ -146,7 +146,9 @@ bodyContent={
         }}
      ></input>
       <button 
-      className={style.btn_ok}>
+      className={style.btn_ok}
+      onClick={()=>navigate('/eventcreateguestlisteditable')}
+      >
         המשך
           
         </button>

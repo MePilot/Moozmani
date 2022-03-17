@@ -10,6 +10,51 @@ import questionSVG from './question.svg'
 import xSVG from './x.svg'
 import dateSVG from './date.svg'
 import eventImageJPG from './event_image.jpg'
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  HatenaShareButton,
+  InstapaperShareButton,
+  LineShareButton,
+  LinkedinShareButton,
+  LivejournalShareButton,
+  MailruShareButton,
+  OKShareButton,
+  PinterestShareButton,
+  PocketShareButton,
+  RedditShareButton,
+  TelegramShareButton,
+  TumblrShareButton,
+  TwitterShareButton,
+  ViberShareButton,
+  VKShareButton,
+  WhatsappShareButton,
+  WorkplaceShareButton
+} from "react-share";
+
+import {
+  EmailIcon,
+  FacebookIcon,
+  FacebookMessengerIcon,
+  HatenaIcon,
+  InstapaperIcon,
+  LineIcon,
+  LinkedinIcon,
+  LivejournalIcon,
+  MailruIcon,
+  OKIcon,
+  PinterestIcon,
+  PocketIcon,
+  RedditIcon,
+  TelegramIcon,
+  TumblrIcon,
+  TwitterIcon,
+  ViberIcon,
+  VKIcon,
+  WeiboIcon,
+  WhatsappIcon,
+  WorkplaceIcon
+} from "react-share";
 
 function GuestInvitationMessage() {
   const [greetText, setGreetText] = useState('')
@@ -91,15 +136,29 @@ bodyContent={
       </button>
       <button
      className={style.btn_finish}
-     onClick={()=>navigate('/loggedin')}
+     onClick={()=>navigate('/guestresponcereceived')}
      >
        סיום
       </button>
-      <button
-     className={style.btn_finish}
-     >
-       שתף
-      </button>
+      <div className={style.share_container}>
+      <EmailShareButton url='http://localhost:3000/guestinvitationmessage'>
+     <EmailIcon size={32} />
+      </EmailShareButton>
+      <FacebookShareButton url='http://localhost:3000/guestinvitationmessage'>
+     <FacebookIcon size={32} />
+      </FacebookShareButton>
+      <TwitterShareButton url='http://localhost:3000/guestinvitationmessage'>
+     <TwitterIcon size={32} />
+      </TwitterShareButton>
+      <WhatsappShareButton url='http://localhost:3000/guestinvitationmessage'>
+     <WhatsappIcon size={32} />
+      </WhatsappShareButton>
+      <TelegramShareButton url='http://localhost:3000/guestinvitationmessage'>
+     <TelegramIcon size={32} />
+      </TelegramShareButton>
+      </div>
+     
+     
       
     </div>
    

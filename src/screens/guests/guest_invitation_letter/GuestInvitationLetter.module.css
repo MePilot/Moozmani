@@ -13,6 +13,27 @@
   margin-top: 5%;
   border: 0px;
 }
+.btn_confirm:disabled{
+ color: #9A9A9A;
+}
 .lbl_message {
   color: white;
+}
+.divider {
+  margin: 3% 0 3% 0;
+  border-bottom: 2px solid #e9a6a6; 
+  height: 1rem;
+  width: 100%;
+}
+
+.divider_text {
+  color: white;
+  padding: 0 10px;
+  font-size: 1.5rem !important;
+  background-color: #241332;
+}
+.share_container {
+  display: flex;
+  justify-content: start;
+  width: 100%;
 }

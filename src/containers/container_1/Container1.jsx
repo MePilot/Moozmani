@@ -41,9 +41,12 @@ function Container1({headerContent, bodyContent}) {
         <MainMenu setToggle={setToggle}/>
         </div>
       <div className={style.navbar}>
-        <div className={style.bell}> 
-        <img  src={bellSVG}
+        <div className={style.bell}
          onClick={()=>setToggleNotifications(toggleNotifications=> !toggleNotifications)}
+        
+        > 
+        <img  src={bellSVG}
+        
         
         ></img>
          <div

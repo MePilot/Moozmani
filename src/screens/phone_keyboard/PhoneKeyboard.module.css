@@ -7,12 +7,6 @@
     width: 90%;
 }
 
-@media screen and (max-height: 630px) {
-    .phone_keyboard {
-        display: none;
-    }
-}
-
 .digit {
     display: flex;
     justify-content: center;

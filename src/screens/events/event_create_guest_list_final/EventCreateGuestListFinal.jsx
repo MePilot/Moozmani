@@ -46,7 +46,7 @@ bodyContent={
      <div className={style.btn_group}>
      <button 
       className={style.btn_edit}
-      onClick={()=>navigate('/eventcreatecategory')}
+      onClick={()=>navigate('/eventcreateguestlisteditable')}
       
       >
         עריכת רשימת מוזמנים

@@ -1,8 +1,8 @@
 .container {
-    min-height: calc(100vh);
+    height: inherit;
     background-color: #241332;
     position: relative;
-    width: calc(100vw);
+   
     z-index: 1;
 }
 

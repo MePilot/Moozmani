@@ -1,0 +1,113 @@
+.switch_container {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    direction: rtl;
+    border-radius: 10px;
+    border: 1px solid #E9A6A6;
+    margin-bottom: 5%;
+}
+.switch_button_right {
+    flex-grow: 1;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem !important;
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    margin:0;
+}
+
+.switch_button_right_selected{
+    flex-grow: 1;
+    background-color: #E9A6A6;
+    color: white;
+    font-size: 1rem !important;
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    margin:0;
+}
+
+.switch_button_left {
+    flex-grow: 1;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem !important;
+    border: 0px;
+    border-radius: 10px 0px 0px 10px;
+    margin:0;
+}
+.switch_button_left_selected{
+    flex-grow: 1;
+    background-color: #E9A6A6;
+    color: white;
+    font-size: 1rem !important;
+    border: 0px;
+    border-radius: 10px 0px 0px 10px;
+    margin:0;
+}
+.btn_ok {
+    margin-top: auto;
+   
+}
+
+.reg_input {
+    color: white;
+    direction: rtl;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #817889;
+    font-size: 2.625em;
+    width: 90%;
+    box-shadow: none;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+
+.reg_input_container {
+    position: relative;
+    width: 100%;
+}
+
+.card_icon {
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+.payment_list_item{
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    color: #707070;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 0.3rem;
+    align-items: baseline;
+     width: 100%;
+    
+  }
+
+  .payment_list{
+   width: 100%;
+   overflow-y: scroll;
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+   padding: 0px;
+   margin-bottom: 10%;
+  }
+  .payment_list::-webkit-scrollbar {
+    display: none;
+}
+  
+  .form_control {
+    font-family: system-ui, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    display: grid;
+    direction: rtl;
+    grid-template-columns: 1rem auto;
+    gap: 2rem;
+    color: #707070;
+    margin-top: 1rem;
+    text-align: start;
+  }
+  
