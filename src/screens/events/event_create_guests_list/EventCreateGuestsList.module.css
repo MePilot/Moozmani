@@ -92,7 +92,9 @@
    -ms-overflow-style: none;  /* IE and Edge */
    scrollbar-width: none;  /* Firefox */
    padding: 0px;
-   margin-bottom: 10%;
+  
+   height: 45vh;
+   
   }
   .payment_list::-webkit-scrollbar {
     display: none;
