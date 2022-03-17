@@ -104,7 +104,7 @@ bodyContent={
       className={style.btn_confirm}
       onClick={()=>navigate('/guestinvitationpreview',{state:greetText})}
       >
-     ראה ושתף עמוד הזמנה
+     הצג ושתף עמוד הזמנה
       </button>
       {/* <div className={style.share_container}>
       <EmailShareButton url={window.location.href}>

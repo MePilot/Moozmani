@@ -72,7 +72,7 @@ bodyContent={
   <>
   <img src={eventImageJPG} className={style.summary_image}></img>
   <p className={style.title}>החתונה של דניאל וירון</p>
-  <p style={{marginBottom:'2rem', marginTop:'1rem', fontSize:'1.2rem'}}>{location?.state.text}</p>
+  <p style={{marginBottom:'2rem', marginTop:'1rem', fontSize:'1.2rem'}}>{location?.state?.text}</p>
     <p style={{ margin:0}}>02/02/20 ,יום רביעי בשעה 20:00</p>
     <p style={{margin:0, fontSize:'1rem'}}>  <img className={style.waze_icon}  src={wazeSVG}></img> מקום אירוע: אולמי אגדתא </p>
    
