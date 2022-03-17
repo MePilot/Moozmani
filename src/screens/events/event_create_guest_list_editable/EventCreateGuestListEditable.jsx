@@ -62,6 +62,11 @@ bodyContent={
   <>
     
      <div className={style.categories_container}>
+     <div className={style.category_a}
+       onClick={()=>setContacts(contactList)}
+       >
+         <span className={style.category_name}>כולם</span>
+       </div>
        <div className={style.category_a}
        onClick={()=>setContacts(contactList.filter(c=>c.cat==='family'))}
        >

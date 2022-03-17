@@ -38,7 +38,7 @@ bodyContent={
      </div>
      
      <div className={style.btn_group}>
-        <button className={style.btn_share}>שיתוף</button>
+       
         <button className={style.btn_quit} 
         onClick={()=>navigate('/loggedin')}
         >סיום</button>

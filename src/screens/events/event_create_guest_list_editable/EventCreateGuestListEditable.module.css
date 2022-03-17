@@ -1,7 +1,7 @@
 .categories_container {
     display: grid;
     direction: rtl;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
   
    

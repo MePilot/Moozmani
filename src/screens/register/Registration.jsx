@@ -18,7 +18,7 @@ function Registration() {
   const handleSexSelect= (sex)=> {
     setState((prev)=>({...prev,sex:sex}))
   }
- 
+  console.log(window.location.href)
   return (
 <Container1
 headerContent={

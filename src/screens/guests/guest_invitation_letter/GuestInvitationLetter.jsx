@@ -100,22 +100,28 @@ bodyContent={
         </span>
       </div>
       <div className={style.share_container}>
-      <EmailShareButton url='http://localhost:3000/guestinvitationmessage'>
+      <EmailShareButton url={window.location.href}>
      <EmailIcon size={32} />
       </EmailShareButton>
-      <FacebookShareButton url='http://localhost:3000/guestinvitationmessage'>
+      <FacebookShareButton url={window.location.href}>
      <FacebookIcon size={32} />
       </FacebookShareButton>
-      <TwitterShareButton url='http://localhost:3000/guestinvitationmessage'>
+      <TwitterShareButton url={window.location.href}>
      <TwitterIcon size={32} />
       </TwitterShareButton>
-      <WhatsappShareButton url='http://localhost:3000/guestinvitationmessage'>
+      <WhatsappShareButton url={window.location.href}>
      <WhatsappIcon size={32} />
       </WhatsappShareButton>
-      <TelegramShareButton url='http://localhost:3000/guestinvitationmessage'>
+      <TelegramShareButton url={window.location.href}>
      <TelegramIcon size={32} />
       </TelegramShareButton>
       </div>
+      <button 
+      className={style.btn_confirm}
+      onClick={()=>navigate('/eventsummary')}
+      >
+      סיום
+      </button>
   </>
 }
 

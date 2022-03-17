@@ -37,7 +37,9 @@ bodyContent={
          <span className={style.category_name}>עבודה</span>
        </div>
        <div 
-      className={style.btn_other}>
+      className={style.btn_other}
+      onClick={()=>navigate('/eventcreateguestslist',{state:'אחר'})}
+      >
         אחר
           
         </div>
@@ -54,7 +56,9 @@ bodyContent={
           <img src={excelSVG} style={{verticalAlign:'middle', marginRight:'1rem'}}></img>
         </button>
         <button 
-      className={style.btn_continue}>
+      className={style.btn_continue}
+      onClick={()=>navigate('/eventcreateguestslist',{state:'אחר'})}
+      >
         המשך
           
         </button>

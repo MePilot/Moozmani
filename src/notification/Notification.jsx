@@ -5,7 +5,8 @@ import checkCircleSVG from './checkcircle.svg'
 import XSVG from './x.svg'
 import ExclamSVG from './exclam.svg'
 import Item from './Item';
-function Notification({data, toggle,setToggleNotifications}) {
+
+function Notification({data, toggle, setToggleNotifications}) {
   const navigate = useNavigate()
  
   const ref = useRef()

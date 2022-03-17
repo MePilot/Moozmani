@@ -44,6 +44,7 @@ import EventCreateGuestsListModify from './screens/events/event_create_guest_lis
 
 
 function App() {
+  console.log(window.location.href)
   return (
     <div className="App">
       <BrowserRouter>

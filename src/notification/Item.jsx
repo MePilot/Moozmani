@@ -23,7 +23,9 @@ function Item({date, arrive, content}) {
       }        
   }, [arrive])
   return (
-    <div className={style.container_inner}>
+    <div className={style.container_inner}
+    onClick={()=>navigate('/guestinvitationmessage')}
+    >
                         <img className={style.icon} src={curIcon}></img>
                         <div className={style.data}>
                             <p className={style.date}>{date}</p>
