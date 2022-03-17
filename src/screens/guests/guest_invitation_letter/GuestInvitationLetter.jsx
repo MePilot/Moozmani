@@ -80,13 +80,13 @@ bodyContent={
 
      </textarea >
 
-     <button 
+     {/* <button 
      disabled={greetText===greetTextFinal}
       className={style.btn_confirm}
       onClick={()=>setGreetTextFinal(greetText)}
       >
      שמירה
-      </button>
+      </button> */}
       <button 
       className={style.btn_confirm}
       onClick={()=>navigate('/guestinvitationlettersent')}
@@ -95,11 +95,18 @@ bodyContent={
       </button>
       <div className={style.divider}>
         <span className={style.divider_text}>
-          או שתף עמוד הזמנה
+          או
     
         </span>
       </div>
-      <div className={style.share_container}>
+        <button 
+    //  disabled={greetText===greetTextFinal}
+      className={style.btn_confirm}
+      onClick={()=>navigate('/guestinvitationpreview',{state:greetText})}
+      >
+     ראה ושתף עמוד הזמנה
+      </button>
+      {/* <div className={style.share_container}>
       <EmailShareButton url={window.location.href}>
      <EmailIcon size={32} />
       </EmailShareButton>
@@ -115,7 +122,7 @@ bodyContent={
       <TelegramShareButton url={window.location.href}>
      <TelegramIcon size={32} />
       </TelegramShareButton>
-      </div>
+      </div> */}
       <button 
       className={style.btn_confirm}
       onClick={()=>navigate('/eventsummary')}

@@ -41,10 +41,11 @@ import About from './screens/about/About';
 import GuestResponceReceived from './screens/guests/guest_response_received/GuestResponceReceived';
 import EventCreateGuestsListEditable from './screens/events/event_create_guest_list_editable/EventCreateGuestListEditable';
 import EventCreateGuestsListModify from './screens/events/event_create_guest_list_modify/EventCreateGuestsListModify';
+import GuestInvitationPreview from './screens/guests/guest_invitation_letter_preview/GuestInvitationPreview';
 
 
 function App() {
-  console.log(window.location.href)
+ 
   return (
     <div className="App">
       <BrowserRouter>
@@ -91,6 +92,8 @@ function App() {
         <Route path="/guestresponcereceived" element={<GuestResponceReceived/>} />
         <Route path="/eventcreateguestlisteditable" element={<EventCreateGuestsListEditable/>} />
         <Route path="/eventcreateguestlistmodify" element={<EventCreateGuestsListModify/>} />
+        <Route path="/guestinvitationpreview" element={<GuestInvitationPreview/>} />
+
       </Routes>
       
       </BrowserRouter>
